@@ -19,9 +19,9 @@
   border: 5px solid darkblue;
   border-radius: 10px;
   padding: 10px;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
+  /* display: flex;  */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
  
 }
