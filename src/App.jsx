@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import StarshipCard from "./components/StarshipCard";
 import { getAllStarships } from "./services/sw-api";
+import Header from "./components/Header"
 
 function App() {
   const [starships, setStarships] = useState([]);
@@ -20,10 +21,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {starships.map((starship, index) => (
-        <StarshipCard key={index} name={starship.name} />
-      ))}
+    <div>
+      <Header />
+      <div className="section-header">
+        <h2>Starships</h2>
+      </div>
+      <div className="App">
+        {starships.map((starship, index) => (
+          <StarshipCard key={index} name={starship.name} />
+        ))}
+      </div>
     </div>
   );
 }
