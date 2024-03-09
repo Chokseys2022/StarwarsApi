@@ -1,6 +1,5 @@
 import React from 'react'
-// import '/StarshipCard.css';
-import "./App.css"
+import '../App.css'
 
 function StarshipCard({name}) {
   return (

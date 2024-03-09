@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
 import StarshipCard from "./components/StarshipCard";
+import { getAllStarships } from "./services/sw-api";
 
 function App() {
-  const [starships, setStarships] = useState(0);
+  const [starships, setStarships] = useState([]);
 
   useEffect(() => {
     const fetchStarships = async () => {
       try {
-        const data = await getAllStartships();
-        setStarships(data.results);
+        const data = await getAllStarships();
+        setStarships(data);
       } catch (error) {
-        console.error("Error fetching startship data", error);
+        console.error("Error fetching starship data", error);
       }
     };
 
@@ -20,12 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      {starships.map((starship) => (
-        <StarshipCard key={starship.name} name={starship.name} />
+      {starships.map((starship, index) => (
+        <StarshipCard key={index} name={starship.name} />
       ))}
     </div>
   );
 }
-
 
 export default App;
