@@ -10,3 +10,4 @@ export async function getAllStarships() {
     throw new Error('Failed to fetch starships');
   }
 }
+

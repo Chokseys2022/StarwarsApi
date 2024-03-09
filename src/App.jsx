@@ -22,10 +22,10 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <div className="section-header">
-        <h2>Starships</h2>
+        <h2>Starship Names</h2>
       </div>
       <div className="App">
         {starships.map((starship, index) => (
