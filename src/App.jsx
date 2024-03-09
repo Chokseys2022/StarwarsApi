@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import StarshipCard from "./StarshipCard";
+import './App.css';
+import StarshipCard from "./components/StarshipCard";
 
 function App() {
   const [starships, setStarships] = useState(0);
@@ -26,5 +26,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
