@@ -1,8 +1,19 @@
-# React + Vite
+# Star Wars Starships React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React application that fetches and displays Star Wars starships names from the Star Wars API (SWAPI).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches and displays a list of Star Wars starships.
+- Uses Axios for API requests and React Hooks for state management.
+
+## Technologies Used
+
+- React
+- Axios
+- SWAPI (Star Wars API)
+
+## Api Source
+
+(https://swapi.tech/)
+
