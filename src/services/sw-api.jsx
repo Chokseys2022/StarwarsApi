@@ -1,3 +1,6 @@
+//sw-api.jsx
+
+//Importing axios library for making HTTP requests
 import axios from 'axios';
 
 const SW_API_BASE_URL = 'https://www.swapi.tech/api/';
@@ -11,3 +14,4 @@ export async function getAllStarships() {
   }
 }
 
+//-----------------------EBD CODE------------------------------//

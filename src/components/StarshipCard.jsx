@@ -1,6 +1,10 @@
+//StarShipCard.jsx
+
 import React from 'react';
 import '../App.css';
 
+
+// StarshipCard component to display information about a starship
 function StarshipCard({ name, model, manufacturer }) {
   return (
     <div className="starship-card">
@@ -12,3 +16,5 @@ function StarshipCard({ name, model, manufacturer }) {
 }
 
 export default StarshipCard;
+
+//---------------------END CODE-----------------------------//

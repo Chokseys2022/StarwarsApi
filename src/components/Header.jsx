@@ -1,5 +1,8 @@
+//Header.jsx
+
 import React from "react";
 
+// Header component to display the title
 function Header() {
   return (
     <header>
@@ -9,3 +12,5 @@ function Header() {
 }
 
 export default Header;
+
+//---------------------------END CODE----------------------------------//
